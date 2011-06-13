@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/options.xsd">
+	<import>
+		<categories>			
+			<category name="linkList"></category>
+			
+			<category name="linkList.category">
+				<parent>linkList</parent>
+			</category>
+			
+			<category name="linkList.link">
+				<parent>linkList</parent>
+			</category>
+			
+			<category name="linkList.comment">
+				<parent>linkList</parent>
+			</category>
+		</categories>
+		
+		<options>
+			<!-- module options -->
+			<option name="module_linkList">
+				<categoryname>module.content</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<!-- module options -->
+			
+			<option name="profile_show_last_linkList_links">
+				<categoryname>user.profile.general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<options>module_linkList</options>
+			</option>
+			
+			<!-- linkList.category -->
+			<option name="linkList_category_links_per_page">
+				<categoryname>linkList.category</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>15</defaultvalue>
+			</option>
+			<option name="linkList_category_default_sort_field">
+				<categoryname>linkList.category</categoryname>
+				<optiontype>select</optiontype>
+				<defaultvalue>lastChangeTime</defaultvalue>
+				<selectoptions><![CDATA[subject:wcf.linkList.category.sortBy.subject
+lastChangeTime:wcf.linkList.category.sortBy.lastChangeTime
+visits:wcf.linkList.category.sortBy.visits
+comments:wcf.linkList.category.sortBy.comments
+time:wcf.linkList.category.sortBy.time]]></selectoptions>
+			</option>
+			<option name="linkList_category_default_sort_order">
+				<categoryname>linkList.category</categoryname>
+				<optiontype>select</optiontype>
+				<defaultvalue>DESC</defaultvalue>
+				<selectoptions><![CDATA[ASC:wcf.global.sortOrder.ascending
+DESC:wcf.global.sortOrder.descending]]></selectoptions>
+			</option>
+			<!-- /linkList.category -->
+			
+			<!-- linkList.link -->
+			<option name="linkList_link_enable_recycle_bin">
+				<categoryname>linkList.link</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<enableoptions><![CDATA[linkList_link_empty_recycle_bin_cycle]]></enableoptions>
+			</option>
+			<option name="linkList_link_empty_recycle_bin_cycle">
+				<categoryname>linkList.link</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>30</defaultvalue>
+			</option>
+			<option name="linkList_activity_points_per_link">
+				<categoryname>linkList.link</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>20</defaultvalue>
+			</option>
+			<option name="linkList_link_show_sidebar">
+				<categoryname>linkList.link</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="linkList_link_show_lastVisitors">
+				<categoryname>linkList.link</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="linkList_link_show_facebook_likeButton">
+				<categoryname>linkList.link</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+			</option>
+			<!-- /linkList.link -->
+			
+			<!-- linkList.comment -->
+			<option name="linkList_enable_comments">
+				<categoryname>linkList.comment</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<enableoptions><![CDATA[linkList_commentList_comments_per_page,linkList_commentList_show_sidebar,linkList_commentList_show_signature,linkList_activity_points_per_comment]]></enableoptions>
+			</option>
+			<option name="linkList_commentList_comments_per_page">
+				<categoryname>linkList.comment</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>10</defaultvalue>
+			</option>
+			<option name="linkList_commentList_show_sidebar">
+				<categoryname>linkList.comment</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="linkList_commentList_show_signature">
+				<categoryname>linkList.comment</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="linkList_activity_points_per_comment">
+				<categoryname>linkList.comment</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>10</defaultvalue>
+			</option>
+			<!-- /linkList.comment -->
+		</options>
+	</import>
+</data>

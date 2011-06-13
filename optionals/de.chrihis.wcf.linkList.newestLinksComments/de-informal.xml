@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de-informal">
+	<!-- wcf.acp.linkList -->
+	<category name="wcf.linkList">
+		<item name="wcf.linkList.newestLinks.title"><![CDATA[Die &raquo;{LINKLIST_NEWESTLINKS_NUMBER}&laquo; neusten Links]]></item>
+		<item name="wcf.linkList.newestLinks.description"><![CDATA[Hier findest du die zuletzt hinzugefügten Links.]]></item>
+		<item name="wcf.linkList.newestLinks.noLinks"><![CDATA[Es wurden noch keine Links hinzugef&uuml;gt.]]></item>
+		<item name="wcf.linkList.newestLinks.ownLink"><![CDATA[Dieser Link stammt von dir.]]></item>
+		<item name="wcf.linkList.newestLinks.attachments"><![CDATA[Dieser Link enthält Dateianh&auml;nge.]]></item>
+		<item name="wcf.linkList.newestLinks.type1"><![CDATA[Ansicht 1]]></item>
+		<item name="wcf.linkList.newestLinks.type2"><![CDATA[Ansicht 2]]></item>
+		<item name="wcf.linkList.newestComments.title"><![CDATA[Die &raquo;{LINKLIST_NEWESTCOMMENTS_NUMBER}&laquo; neusten Kommentare]]></item>
+		<item name="wcf.linkList.newestComments.description"><![CDATA[Hier findest du die zuletzt hinzugef&uuml;gten Kommentare.]]></item>
+		<item name="wcf.linkList.newestComments.noComments"><![CDATA[Es wurden noch keine Kommentare hinzugef&uuml;gt.]]></item>
+		<item name="wcf.linkList.newestComments.ownComment"><![CDATA[Dieser Kommentar stammt von dir.]]></item>
+		<item name="wcf.linkList.newestComments.type1"><![CDATA[Ansicht 1]]></item>
+		<item name="wcf.linkList.newestComments.type2"><![CDATA[Ansicht 2]]></item>
+	</category>
+	<!-- /wcf.acp.linkList -->
+	
+	<!-- wcf.acp.option -->
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.linkList.link.newestLinks"><![CDATA[Neusten Links]]></item>
+		<item name="wcf.acp.option.category.linkList.link.newestLinks.description" />
+		<item name="wcf.acp.option.linkList_show_newestLinks"><![CDATA[Neusten Links anzeigen]]></item>
+		<item name="wcf.acp.option.linkList_show_newestLinks.description"><![CDATA[Wähle diese Option, wenn du willst, dass die neusten Links angezeigt werden sollen.]]></item>
+		<item name="wcf.acp.option.linkList_newestLinks_number"><![CDATA[Anzahl der zu zeigenden Links]]></item>
+		<item name="wcf.acp.option.linkList_newestLinks_number.description"><![CDATA[Gib hier an, wieviele Links in der Anzeige &raquo; Die <em>x</em> neusten Links&laquo; angezeigt werden sollen.]]></item>
+		<item name="wcf.acp.option.linkList_newestLinks_type"><![CDATA[Ansicht]]></item>
+		<item name="wcf.acp.option.linkList_newestLinks_type.description"><![CDATA[<p>Wähle hier die Ansicht aus, wie die neusten Links angezeigt werden sollen.</p>
+<strong>Ansicht 1</strong>: Ansicht der neusten Links unterhalb der Statistik <br />
+<strong>Ansicht 2</strong>: Ansicht unterhalb des Seitentitels]]></item>
+		<item name="wcf.acp.option.category.linkList.comment.newestComments"><![CDATA[Neuste Kommentare]]></item>
+		<item name="wcf.acp.option.category.linkList.comment.newestComments.description" />
+		<item name="wcf.acp.option.linkList_show_newestComments"><![CDATA[Neusten Kommentare anzeigen]]></item>
+		<item name="wcf.acp.option.linkList_show_newestComments.description"><![CDATA[W&auml;hle diese Option, wenn du willst, dass die neusten Kommentare angezeigt werden sollen.]]></item>
+		<item name="wcf.acp.option.linkList_newestComments_number"><![CDATA[Anzahl der zu zeigenden Kommentare]]></item>
+		<item name="wcf.acp.option.linkList_newestComments_number.description"><![CDATA[Gib hier an, wieviele Kommentare in der Anzeige &raquo; Die <em>x</em> neusten Kommentare&laquo; angezeigt werden sollen.]]></item>
+		<item name="wcf.acp.option.linkList_newestComments_type"><![CDATA[Ansicht]]></item>
+		<item name="wcf.acp.option.linkList_newestComments_type.description"><![CDATA[<p>W&auml;hlen Sie hier die Ansicht aus, wie die neusten Kommentare angezeigt werden sollen.</p>
+<strong>Ansicht 1</strong>: Ansicht der neusten Kommentare unterhalb der Statistik <br />
+<strong>Ansicht 2</strong>: Ansicht unterhalb des Seitentitels]]></item>
+	</category>
+	<!-- /wcf.acp.option -->	
+</language>

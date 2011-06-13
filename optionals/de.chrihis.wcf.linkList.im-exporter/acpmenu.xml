@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/acp-menu.xsd">
+	<import>		
+		<acpmenuitem name="wcf.acp.menu.link.content.linkList.dataExImPort">
+			<parent>wcf.acp.menu.link.content.linkList</parent>
+		</acpmenuitem>
+		
+		<acpmenuitem name="wcf.acp.menu.link.content.linkList.exportAll">
+			<parent>wcf.acp.menu.link.content.linkList.dataExImPort</parent>
+			<link>index.php?action=LinkListDataExport</link>
+			<permissions>admin.linkList.canImExPortLinkListData</permissions> 
+		</acpmenuitem>
+		<acpmenuitem name="wcf.acp.menu.link.content.linkList.importAll">
+			<parent>wcf.acp.menu.link.content.linkList.dataExImPort</parent>
+			<link>index.php?form=LinkListDataImport</link>
+			<permissions>admin.linkList.canImExPortLinkListData</permissions> 
+		</acpmenuitem>
+	</import>
+</data>

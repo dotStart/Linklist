@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/notification-event.xsd">
+	<import>
+		<event>
+			<name>newLinkComment</name>
+			<objecttype>linkListLink</objecttype>
+			<classfile>lib/data/user/notification/event/DefaultNotificationEvent.class.php</classfile>
+			<languagecategory>wcf.linkList.notification</languagecategory>
+			<defaultnotificationtype>userMessages</defaultnotificationtype>
+			<icon>message</icon>
+			<requiresconfirmation>1</requiresconfirmation>
+			<options>module_linkList</options>
+		</event>
+	</import>
+</data>

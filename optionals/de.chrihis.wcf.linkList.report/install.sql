@@ -1,0 +1,14 @@
+-- update
+@ALTER TABLE wcf1_linkList_link ADD isReported TINYINT(1) NOT NULL DEFAULT 0;
+
+-- add a new table
+DROP TABLE IF EXISTS wcf1_linkList_link_report;
+CREATE TABLE wcf1_linkList_link_report (
+	reportID INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	linkID INT(10) NOT NULL DEFAULT 0,
+	userID INT(10) NOT NULL DEFAULT 0,
+	username VARCHAR(255) NOT NULL DEFAULT '',
+	report MEDIUMTEXT NOT NULL,
+	reportTime INT(10) NOT NULL DEFAULT 0,
+	UNIQUE KEY (linkID)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;

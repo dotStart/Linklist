@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.wcfsolutions.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wcfsolutions.com/XSD/counter-update-type.xsd">
+	<import>
+		<type>
+			<name>linkListLinkComment</name>
+			<classfile>lib/system/counterUpdate/type/LinkListLinkCommentCounterUpdateType.class.php</classfile>
+		</type>
+		<type>
+			<name>linkListCategory</name>
+			<classfile>lib/system/counterUpdate/type/LinkListCategoryCounterUpdateType.class.php</classfile>
+		</type>
+	</import>
+</data>

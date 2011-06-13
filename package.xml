@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="de.chrihis.wcf.linkList" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/package.xsd">
+	<packageinformation>
+		<packagename>Link Sammlung (Linkliste)</packagename>
+		<packagedescription>Sammeln Sie mit Ihrer Community Links so einfach und übersichtlich wie noch nie. Viele Funktionen gewähren Ihnen und Ihrer Community eine zuverlässige Sammlung.</packagedescription>
+		<version>1.1.0</version>
+		<date>2011-06-12</date>
+		<plugin>com.woltlab.wcf.data.page</plugin>
+		<standalone>0</standalone>
+		<isunique>1</isunique>
+	</packageinformation>
+  
+	<authorinformation>
+		<author>Evil-Co.de (Originally developed by Christoph H. (Chrihis))</author>
+		<authorurl><![CDATA[http://www.evil-co.de]]></authorurl>
+	</authorinformation>
+  
+	<requiredpackages>
+		<requiredpackage minversion="1.1.0">com.woltlab.wcf</requiredpackage>
+		<requiredpackage minversion="2.0.0" file="requirements/com.wcfsolutions.wcf.acp.system.counterUpdate.tar">com.wcfsolutions.wcf.acp.system.counterUpdate</requiredpackage>
+		<requiredpackage minversion="1.1.0">com.woltlab.wcf.data.message</requiredpackage>
+		<requiredpackage minversion="1.1.2">com.woltlab.wcf.data.message.attachment</requiredpackage>
+		<requiredpackage minversion="1.1.0">com.woltlab.wcf.form.user.signature</requiredpackage>
+		<requiredpackage minversion="1.0.1">com.woltlab.wcf.imageViewer</requiredpackage>
+		<requiredpackage minversion="1.1.2">com.woltlab.wcf.form.user</requiredpackage>
+		<requiredpackage minversion="1.1.2">com.woltlab.wcf.page.user.profile</requiredpackage>
+		<requiredpackage minversion="1.0.1">com.woltlab.wcf.tagging</requiredpackage>
+	</requiredpackages>
+	
+	<optionalpackages>
+		<optionalpackage file="optionals/de.chrihis.wcf.linkList.im-exporter.tar">de.chrihis.wcf.linkList.im-exporter</optionalpackage>
+		<optionalpackage file="optionals/de.chrihis.wcf.linkList.comment.notification.tar">de.chrihis.wcf.linkList.comment.notification</optionalpackage>
+		<optionalpackage file="optionals/de.chrihis.wcf.linkList.comment.renommee.tar">de.chrihis.wcf.linkList.comment.renommee</optionalpackage>
+		<optionalpackage file="optionals/de.chrihis.wcf.linkList.link.renommee.tar">de.chrihis.wcf.linkList.link.renommee.tar</optionalpackage>
+		<optionalpackage file="optionals/de.chrihis.wcf.linkList.link.thumbnail.tar">de.chrihis.wcf.linkList.link.thumbnail</optionalpackage>
+		<optionalpackage file="optionals/de.chrihis.wcf.linkList.newestLinksComments.tar">de.chrihis.wcf.linkList.newestLinksComments</optionalpackage>
+		<optionalpackage file="optionals/de.chrihis.wcf.linkList.quote.infraction.tar">de.chrihis.wcf.linkList.quote.infraction</optionalpackage>
+		<optionalpackage file="optionals/de.chrihis.wcf.linkList.report.tar">de.chrihis.wcf.linkList.report</optionalpackage>
+		<optionalpackage file="optionals/de.chrihis.wcf.linkList.showCommentsOnLinkPage.tar">de.chrihis.wcf.linkList.showCommentsOnLinkPage</optionalpackage>
+	</optionalpackages>
+	
+	<excludedpackages>
+		<excludedpackage version="1.0.*">de.wbblite2.chrihis.linkList</excludedpackage>
+	</excludedpackages>
+	
+	<instructions type="install">
+		<!-- files -->
+		<acptemplates>acptemplates.tar</acptemplates>
+		<files>files.tar</files>
+		<sql>install.sql</sql>
+		<templates>templates.tar</templates>
+		<script>acp/install_linkList.php</script>
+		
+		<!-- config -->
+		<acpmenu>acpmenu.xml</acpmenu>
+		<attachmentcontainertype>act.xml</attachmentcontainertype>
+		<groupoptions>groupoptions.xml</groupoptions>
+		<options>options.xml</options>
+		<pagemenu>pagemenu.xml</pagemenu>
+		<taggable>taggable.xml</taggable>
+		<counterupdatetype>counterupdatetype.xml</counterupdatetype>
+		<help>help.xml</help>
+		<pagelocation>pagelocation.xml</pagelocation>
+		<cronjobs>cronjobs.xml</cronjobs>
+		<searchablemessagetypes>smt.xml</searchablemessagetypes>
+		<eventlistener>eventlistener.xml</eventlistener>
+		
+		<!-- languages -->
+		<languages languagecode="de">de.xml</languages>
+		<languages languagecode="de-informal">de-informal.xml</languages>
+	</instructions>
+	
+	<instructions type="update" fromversion="1.1.0 Beta 1">
+		<files>files.tar</files>
+		<templates>templates.tar</templates>
+		<sql>update.sql</sql>
+		<languages languagecode="de">de.xml</languages>
+		<languages languagecode="de-informal">de-informal.xml</languages>
+	</instructions>
+</package>

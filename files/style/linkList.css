@@ -1,0 +1,158 @@
+.linkListLinkList .contentHeader, .linkListLinkList .contentFooter {
+	margin-top: 7px;
+}
+
+.linkListLinkList .message {
+	margin-bottom: 7px;
+}
+
+.linkListLinkList .messageInner {
+	padding: 10px 20px !important;
+}
+
+.linkListLinkList .containerContent h3 {
+	padding: 0;
+	margin: 0;
+}
+
+.linkListLinkDetails {
+	margin-left: 220px;	
+}
+.linkListLinkDetails:after{
+	clear: left;
+}
+.linkListLinkList .linkListLinkDetails .containerContent h3 {
+	padding: 0;
+	margin: 0;
+}
+
+#linkListCategoryList, #linkListCategoryList ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#linkListCategoryList {
+	margin-bottom: 20px;
+}
+
+#linkListCategoryList .categoryListInner {
+	min-height: 16px;
+}
+
+#linkListCategoryList .categoryListInner .smallButtons {
+	clear: both;
+}
+
+#linkListCategoryList .categoryListInner:after {
+	display: block;
+	clear: both;
+	height: 0;
+	content: "";
+}
+
+#linkListCategoryList .container-1, #linkListCategoryList .container-2  {
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+#linkListCategoryList li ul .categoryListTitle .containerIcon {
+	margin-left: 35px;
+}
+
+#linkListCategoryList li ul .categoryListTitle .containerContent {
+	margin-left: 70px;
+}
+
+#linkListCategoryList li ul li ul .categoryListTitle .containerIcon {
+	margin-left: 20px;
+}
+
+#linkListCategoryList li ul li ul .categoryListTitle .containerContent {
+	margin-left: 105px;
+}
+
+#linkListCategoryList li ul li ul li ul .categoryListTitle .containerIcon {
+	margin-left: 25px;
+}
+
+#linkListCategoryList li ul li ul li ul .categoryListTitle .containerContent {
+	margin-left: 140px;
+}
+
+#linkListCategoryList .containerContent:after {
+	content: "";
+	height: 0;
+	display: block;
+	clear: both;
+}
+
+#linkListCategoryList .container-1, #linkListCategoryList .container-2 {
+	padding: 4px;
+}
+
+.linkListCategoryListCols-2 {
+	float: left;
+	width: 80%;
+}
+
+.linkListCategoryListStats {
+	width: 20%;
+	float: right;
+	font-size: .85em;
+}
+
+.linkListCategoryListStats dl, .linkListCategoryListStats dd, .categoryListStats dt{
+	margin: 0;
+	padding: 0;
+}
+
+.linkListCategoryListStats dt {
+	width: 40%;
+	float: right;
+}
+
+.linkListCategoryListStats dd {
+	width: 58%;
+	text-align: right;
+	float: left;
+}
+
+.linkListCategoryListDescription {
+	margin-bottom: 3px;
+	font-size: .85em;
+}
+
+#linkListCategoryList .containerHead .categoryTitle {
+	width: 99.5%;
+}
+
+#linkListCategoryList .categoryListSubcategories {
+	margin: 3px 0;
+	padding: 0;
+	min-height: 0;
+}
+
+#linkListCategoryList .categoryListSubcategories:after {
+	display: block;
+	clear: both;
+	height: 0;
+	content: "";
+}
+
+#linkListCategoryList .categoryListSubcategories li {
+	margin-right: 2px;
+	float: left;
+}
+
+#linkListCategoryList .categorylistSubcategories li a {
+	white-space: nowrap;
+}
+
+#linkListCategoryList .categoryListSubcategories li h4:after, #linkListCategoryList .categoryListSubcategories li h5:after, #linkListCategoryList .categoryListSubcategories li h6:after {
+	content: ",";
+}
+
+#linkListCategoryList .categoryListSubcategories li.last h4:after, #linkListCategoryList .categoryListSubcategories li.last h5:after, #linkListCategoryList .categoryListSubcategories li.last h6:after {
+	content: "";
+}

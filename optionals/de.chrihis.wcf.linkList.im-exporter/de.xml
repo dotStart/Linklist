@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de">
+	<!-- wcf.acp.menu -->
+	<category name="wcf.acp.menu">
+		<item name="wcf.acp.menu.link.content.linkList.exportAll"><![CDATA[Daten exportieren]]></item>
+		<item name="wcf.acp.menu.link.content.linkList.importAll"><![CDATA[Daten importieren]]></item>
+	</category>
+	<!-- /wcf.acp.menu -->
+
+	<!-- wcf.acp.linkList -->
+	<category name="wcf.acp.linkList">
+		<item name="wcf.acp.linkList.import"><![CDATA[Daten importieren]]></item>
+		<item name="wcf.acp.linkList.import.sourcefile"><![CDATA[Datei hochladen]]></item>
+		<item name="wcf.acp.linkList.import.chooseFile"><![CDATA[Archiv vom Computer ausw&auml;hlen]]></item>
+		<item name="wcf.acp.linkList.warning"><![CDATA[<strong><p>Bitte beachten Sie</strong>: Wenn Sie neue Links importieren werden automatische alle, <strong>bisher vorhandene Links <em>gelöscht</em></strong>! Dieser Vorgang kann danach nicht mehr rückgängig gemacht werden.</p>
+<p class="smallFont">Um einen m&ouml;glichst fehlerfreien Import zu erreichen sollten Sie <a href="http://community.woltlab.com/db/index.php?page=Thread&postID=53146#post53146" class="externalURL">diese Anleitung</a> lesen.</p>]]></item>
+		<item name="wcf.acp.linkList.import.successful"><![CDATA[<p>Die Daten wurden soeben erfolgreich in die Link Sammlung importiert.</p>
+<a href="index.php?form=CounterUpdate&packageID={$packageID}{$sidArg2nd}">Sie sollten jetzt die Anzeigen der Link Sammlung aktualisieren.</a>]]></item>
+	</category>
+	<!-- /wcf.acp.linkList -->
+	
+	<!-- wcf.acp.group -->
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.admin.linkList.canImExPortLinkListData"><![CDATA[Kann Daten der Link Sammlung im/exportieren]]></item>
+		<item name="wcf.acp.group.option.admin.linkList.canImExPortLinkListData.description"><![CDATA[Mitglieder dieser Benutzergruppe k&ouml;nnen die Daten der Link Sammlung importieren und exportieren.]]></item>
+	</category>
+	<!-- /wcf.acp.group -->	
+</language>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/options.xsd">
+	<import>
+		<categories>
+			<category name="linkList.link.thumbnail">
+				<parent>linkList.link</parent>
+			</category>
+		</categories>
+		<options>	
+			<!-- linkList.link.thumbnail -->
+			<option name="linkList_link_show_thumbnail">
+				<categoryname>linkList.link.thumbnail</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<enableoptions><![CDATA[linkList_link_thumbnail_type,linkList_link_thumbnail_view,linkList_link_show_thumbnail_in_category]]></enableoptions>
+			</option>
+			<option name="linkList_link_thumbnail_type">
+				<categoryname>linkList.link.thumbnail</categoryname>
+				<optiontype>select</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<selectoptions><![CDATA[1:wcf.linkList.link.thumbnail.type1
+2:wcf.linkList.link.thumbnail.type2]]></selectoptions>
+			</option>
+			<option name="linkList_link_thumbnail_view">
+				<categoryname>linkList.link.thumbnail</categoryname>
+				<optiontype>select</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<selectoptions><![CDATA[1:wcf.linkList.link.thumbnail.view.type1
+2:wcf.linkList.link.thumbnail.view.type2]]></selectoptions>
+			</option>
+			<option name="linkList_link_show_thumbnail_in_category">
+				<categoryname>linkList.link.thumbnail</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+			</option>
+			<!-- /linkList.link.thumbnail -->
+		</options>
+	</import>
+</data>

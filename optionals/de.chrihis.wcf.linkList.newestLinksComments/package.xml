@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="de.chrihis.wcf.linkList.newestLinksComment" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/package.xsd">
+	<packageinformation>
+		<packagename>Link Sammlung: Neuste Links und Kommentare anzeigen</packagename>
+		<packagedescription>Dieses Plugin zeigt die neusten Links und Kommentare der Link Sammlung (Linkliste) auf der Links-Seite an.</packagedescription>
+		<version>1.0.0</version>
+		<date>2011-03-29</date>
+		<plugin>com.woltlab.wcf.data.page</plugin>
+		<standalone>0</standalone>
+		<isunique>1</isunique>
+	</packageinformation>
+  
+	<authorinformation>
+		<author>Christoph H. (Chrihis)</author>
+		<authorurl><![CDATA[http://community.woltlab.com/db/index.php?page=User&userID=1339032]]></authorurl>
+	</authorinformation>
+  
+	<requiredpackages>
+		<requiredpackage minversion="1.1.0">com.woltlab.wcf</requiredpackage>
+		<requiredpackage minversion="1.1.0 Alpha 1">de.chrihis.wcf.linkList</requiredpackage>
+	</requiredpackages>
+	
+	<instructions type="install">
+		<!-- files -->
+		<files>files.tar</files>
+		<templates>templates.tar</templates>
+		
+		<!-- config -->
+		<eventlistener>eventlistener.xml</eventlistener>
+		<options>options.xml</options>
+		<useroptions>useroptions.xml</useroptions>
+		
+		<!-- languages -->
+		<languages languagecode="de">de.xml</languages>
+		<languages languagecode="de-informal">de-informal.xml</languages>
+	</instructions>
+	
+	<instructions type="update" fromversion="1.0.0 Beta 1">
+		<files>files.tar</files>
+		<templates>templates.tar</templates>
+	</instructions>
+</package>

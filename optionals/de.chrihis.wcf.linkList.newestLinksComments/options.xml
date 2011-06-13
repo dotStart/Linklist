@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/options.xsd">
+	<import>
+		<categories>
+			<category name="linkList.link.newestLinks">
+				<parent>linkList.link</parent>
+			</category>
+			<category name="linkList.comment.newestComments">
+				<parent>linkList.comment</parent>
+			</category>
+		</categories>
+		<options>	
+			<!-- linkList.link.newestLinks -->
+			<option name="linkList_show_newestLinks">
+				<categoryname>linkList.link.newestLinks</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<enableoptions><![CDATA[linkList_newestLinks_number,linkList_newestLinks_type]]></enableoptions>
+			</option>
+			<option name="linkList_newestLinks_number">
+				<categoryname>linkList.link.newestLinks</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>5</defaultvalue>
+			</option>
+			<option name="linkList_newestLinks_type">
+				<categoryname>linkList.link.newestLinks</categoryname>
+				<optiontype>select</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<selectoptions><![CDATA[1:wcf.linkList.newestLinks.type1
+2:wcf.linkList.newestLinks.type2]]></selectoptions>
+			</option>
+			<!-- /linkList.link.newestLinks -->
+			
+			<!-- linkList.comment.newestComments -->
+			<option name="linkList_show_newestComments">
+				<categoryname>linkList.comment.newestComments</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<enableoptions><![CDATA[linkList_newestComments_number,linkList_newestComments_type]]></enableoptions>
+			</option>
+			<option name="linkList_newestComments_number">
+				<categoryname>linkList.comment.newestComments</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>5</defaultvalue>
+			</option>
+			<option name="linkList_newestComments_type">
+				<categoryname>linkList.comment.newestComments</categoryname>
+				<optiontype>select</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<selectoptions><![CDATA[1:wcf.linkList.newestComments.type1
+2:wcf.linkList.newestComments.type2]]></selectoptions>
+			</option>
+			<!-- /linkList.comment.newestComments -->
+		</options>
+	</import>
+</data>

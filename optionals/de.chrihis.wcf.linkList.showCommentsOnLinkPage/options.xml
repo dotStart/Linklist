@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/options.xsd">
+	<import>
+		<options>			
+			<!-- linkList.link -->
+			<option name="linkListLink_show_comments_on_link_page">
+				<categoryname>linkList.link</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<hidden>1</hidden>
+			</option>
+			<!-- /linkList.link -->
+		</options>
+	</import>
+</data>

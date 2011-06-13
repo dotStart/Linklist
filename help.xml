@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/help.xsd">
+	<import>
+		<helpitem name="linkList">
+			<permissions>user.linkList.canViewLinkList</permissions>
+			<options>module_linkList</options>
+		</helpitem>
+		<helpitem name="linkList.links">
+			<parent>linkList</parent>
+			<showorder>1</showorder>
+			<refererpattern><![CDATA[index\.php\?(?:page=LinkList|form=LinkList)]]></refererpattern>
+			<permissions>user.linkList.canViewLink</permissions>
+			<options>module_linkList</options>
+		</helpitem>
+		<helpitem name="linkList.comments">
+			<parent>linkList</parent>
+			<showorder>2</showorder>
+			<refererpattern><![CDATA[index\.php\?(?:page=LinkListLinkCommentList|form=LinkListLinkCommentAdd)]]></refererpattern>
+			<permissions>user.linkList.canViewComment</permissions>
+			<options>module_linkList</options>
+		</helpitem>
+	</import>
+</data>
+

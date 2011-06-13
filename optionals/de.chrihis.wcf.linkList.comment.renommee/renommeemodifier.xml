@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<import>
+		<type>
+			<name>linkListLinkComment</name>
+			<title>wcf.user.renommee.modifier.linkListLinkComment</title>
+			<description>wcf.user.renommee.modifier.linkListLinkComment.description</description>
+			<classfile>lib/data/user/renommee/modifier/LinkListLinkCommentModifier.class.php</classfile>
+			<firstvalue>35</firstvalue>
+			<valuelimit>10</valuelimit>
+			<permissions>user.linkList.canAddComment</permissions>
+			<options>linkList_enable_comments</options>
+		</type>
+	</import>
+</data>

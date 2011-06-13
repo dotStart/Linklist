@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de-informal">
+	<!-- wcf.linkList -->
+	<category name="wcf.linkList">
+		<item name="wcf.linkList.link.report"><![CDATA[Link melden]]></item>
+		<item name="wcf.linkList.link.report.value"><![CDATA[Verstöße melden]]></item>
+		<item name="wcf.linkList.link.report.generalData"><![CDATA[Allgemeine Angaben]]></item>
+		<item name="wcf.linkList.link.report.label"><![CDATA[Grund der Meldung]]></item>
+		<item name="wcf.linkList.link.report.description"><![CDATA[Diese Funktion sollte ausschließlich bei Spam, Werbung und anderen problematischen (rassistischen, gewaltverherrlichenden, agressiven, beleidigenden oder sexistischen) Links verwendet werden.]]></item>
+		<item name="wcf.linkList.link.report.alreadyReported"><![CDATA[Dieser Link wurde bereits von einem Mitglied gemeldet. Er wird in den nächsten Stunden überprüft werden.]]></item>
+		<item name="wcf.linkList.moderation.reportedLinks"><![CDATA[Gemeldete Links]]></item>
+		<item name="wcf.linkList.moderation.reportedLinks.list"><![CDATA[Gemeldete Links auflisten]]></item>
+		<item name="wcf.linkList.moderation.reportedLinks.reportBy"><![CDATA[Gemeldet von {$user} ({$reportTime})]]></item>
+		<item name="wcf.linkList.moderation.reportedLinks.reason"><![CDATA[<strong>Grund</strong>: {$reason}]]></item>
+		<item name="wcf.linkList.reportedLinks.output"><![CDATA[<a href="index.php?page=LinkListModerationReportedLinks{@SID_ARG_2ND}">{if $reportedLinks == 1}1 Link</a> wurde{else}{#$reportedLinks} Links</a> wurden{/if} gemeldet.]]></item>
+		<item name="wcf.linkList.moderation.reportedLinks.delete"><![CDATA[Meldung löschen]]></item>
+		<item name="wcf.linkList.moderation.reportedLinks.delete.sure"><![CDATA[Willst du diese Meldung wirklich löschen?]]></item>
+		<item name="wcf.linkList.moderation.reportedLinks.noLinks"><![CDATA[Es sind keine gemeldeten Links vorhanden.]]></item>
+	</category>
+	<!-- /wcf.linkList -->
+	
+	<!-- wcf.acp.option -->
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.linkList_link_enable_report"><![CDATA[Meldefunktion aktivieren]]></item>
+		<item name="wcf.acp.option.linkList_link_enable_report.description"><![CDATA[Soll es Mitgliedern möglich sein, Links bzw. auch Kommentare zu melden?]]></item>
+	</category>
+	<!-- /wcf.acp.option -->
+	
+	<!-- wcf.acp.group -->
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.user.linkList.canReportLink"><![CDATA[Kann Links melden]]></item>
+		<item name="wcf.acp.group.option.user.linkList.canReportLink.description"><![CDATA[Mitglieder dieser Benutzergruppe können Links Moderatoren melden.]]></item>
+		<item name="wcf.acp.group.option.mod.linkList.canAdministrateReportedLinks"><![CDATA[Kann gemeldete Links verwalten]]></item>
+		<item name="wcf.acp.group.option.mod.linkList.canAdministrateReportedLinks.description"><![CDATA[Mitglieder dieser Benutzergruppe können gemeldete Links verwalten/einsehen.]]></item>
+	</category>
+	<!-- /wcf.acp.group -->
+</language>

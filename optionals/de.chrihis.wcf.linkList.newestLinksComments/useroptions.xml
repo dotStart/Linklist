@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/useroptions.xsd">
+	<import>
+		<options>
+			<option name="linkListShowNewestLinks">
+				<categoryname>hidden</categoryname>
+				<optiontype>boolean</optiontype>
+				<visible>4</visible>
+				<editable>4</editable>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="linkListShowNewestComments">
+				<categoryname>hidden</categoryname>
+				<optiontype>boolean</optiontype>
+				<visible>4</visible>
+				<editable>4</editable>
+				<defaultvalue>1</defaultvalue>
+			</option>
+		</options>
+	</import>
+</data>

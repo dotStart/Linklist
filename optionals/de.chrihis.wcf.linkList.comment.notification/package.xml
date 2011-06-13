@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="de.chrihis.wcf.linkList.comment.notification" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/package.xsd">
+	<packageinformation>
+		<packagename>Benachrichtigung bei neuen Link-Kommentaren</packagename>
+		<packagedescription>Ermöglicht es Ihren Benutzern, Benachrichtigungen bei neuen Kommentaren zu eigenen Links zu erhalten.</packagedescription>
+		<version>1.1.0</version>
+		<date>2011-03-29</date>
+		<standalone>0</standalone>
+		<isunique>1</isunique>
+		<plugin>com.woltlab.community.wcf.user.notification</plugin>
+	</packageinformation>
+
+	<authorinformation>
+		<author>Christoph H. (Chrihis)</author>
+		<authorurl><![CDATA[http://community.woltlab.com/db/index.php?page=User&userID=1339032]]></authorurl>
+	</authorinformation>
+
+	<requiredpackages>
+		<requiredpackage minversion="1.1.0 RC 1">com.woltlab.wcf</requiredpackage>
+		<requiredpackage file="requirements/com.woltlab.community.wcf.user.notification.tar">com.woltlab.community.wcf.user.notification</requiredpackage>
+		<requiredpackage>de.chrihis.wcf.linkList</requiredpackage>
+	</requiredpackages>
+	
+	<excludedpackages>
+		<excludedpackage>de.chrihis.wcf.linkList.showCommentsOnLinkPage</excludedpackage>
+	</excludedpackages>
+
+	<instructions type="install">
+		<files>files.tar</files>				
+		<languages languagecode="de">de.xml</languages>	
+		<languages languagecode="de-informal">de-informal.xml</languages>	
+		<eventlistener>eventlistener.xml</eventlistener>
+		<notificationobjecttype>notificationobjecttype.xml</notificationobjecttype>
+		<notificationevent>notificationevent.xml</notificationevent>
+	</instructions>
+</package>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<import>
+		<type>
+			<name>linkListLink</name>
+			<classfile>lib/data/linkList/link/LinkListLinkRenommeeObjectType.class.php</classfile>
+		</type>
+	</import>
+</data>

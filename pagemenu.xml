@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/page-menu.xsd">
+	<import>
+		<pagemenuitem name="wcf.header.menu.linkList">
+			<iconmedium>linkListM.png</iconmedium>
+			<iconsmall>linkListS.png</iconsmall>
+			<link>index.php?page=LinkList</link>
+			<position>header</position>
+			<permissions>user.linkList.canViewLinkList</permissions>
+			<options>module_linkList</options>
+		</pagemenuitem>
+	</import>
+</data>

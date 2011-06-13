@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de-informal">
+	<!-- wcf.linkList -->
+	<category name="wcf.linkList">
+		<item name="wcf.linkList.link.thumbnail"><![CDATA[Vorschaubild]]></item>
+		<item name="wcf.linkList.link.thumbnailShow"><![CDATA[Vorschaubild anzeigen]]></item>
+		<item name="wcf.linkList.link.thumbnail.type1"><![CDATA[fadeout.de]]></item>
+		<item name="wcf.linkList.link.thumbnail.type2"><![CDATA[websnapr.com]]></item>
+		<item name="wcf.linkList.link.thumbnail.view.type1"><![CDATA[Ansicht 1]]></item>
+		<item name="wcf.linkList.link.thumbnail.view.type2"><![CDATA[Ansicht 2]]></item>
+		<item name="wcf.linkList.link.thumbnail.fadeout.coypright"><![CDATA[Vorschaubilder erstellt durch <a href="http://www.fadeout.de">fadeout.de</a>]]></item>
+	</category>
+	<!-- /wcf.linkList -->
+	
+	<!-- wcf.acp.option -->
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.linkList.link.thumbnail"><![CDATA[Vorschaubilder]]></item>
+		<item name="wcf.acp.option.category.linkList.link.thumbnail.description" />
+		<item name="wcf.acp.option.linkList_link_show_thumbnail"><![CDATA[Vorschaubild eines Links anzeigen]]></item>
+		<item name="wcf.acp.option.linkList_link_show_thumbnail.description"><![CDATA[Soll jeweils ein Vorschaubild zu einem Link angezeigt werden?]]></item>
+		<item name="wcf.acp.option.linkList_link_thumbnail_type"><![CDATA[Vorschaubild-Dienst]]></item>
+		<item name="wcf.acp.option.linkList_link_thumbnail_type.description"><![CDATA[<p>W&auml;hle hier einen Dienst aus, von dem die Vorschaubilder bezogen werden sollen.</p>
+<ul>
+	<li><strong><a href="http://fadeout.de">fadeout.de</a></strong>: Bei diesem Dienst aktiviert sich automatisch ein Copyright auf der Startseite der Linkliste (schreibt der Anbieter vor).</li>
+	<li><strong><a href="http://www.websnapr.com/de/">websnapr.com</a></strong>: Bei diesem Dienst wird im Vorschaubild ein Copyright gezeigt</li>
+]]></item>
+		<item name="wcf.acp.option.linkList_link_thumbnail_view"><![CDATA[Ansicht der Vorschaubilder]]></item>
+		<item name="wcf.acp.option.linkList_link_thumbnail_view.description"><![CDATA[<p>W&auml;hle hier aus, wie die Vorschaubilder dargestellt werden sollen.</p>
+<strong>Ansicht 1</strong>: Zeigt das Vorschaubild direkt im Text an <br />
+<strong>Ansicht 2</strong>: Zeigt das Vorschauild in der Sidebar an]]></item>
+		<item name="wcf.acp.option.linkList_link_show_thumbnail_in_category"><![CDATA[Vorschaubild bei jedem Link bei Links-Auflistung anzeigen]]></item>
+		<item name="wcf.acp.option.linkList_link_show_thumbnail_in_category.description"><![CDATA[Soll bereits bei der Auflistung der Links in einer Kategorie ein Vorschaubild angezeigt werden?]]></item>
+	</category>
+	<!-- /wcf.acp.option -->	
+</language>

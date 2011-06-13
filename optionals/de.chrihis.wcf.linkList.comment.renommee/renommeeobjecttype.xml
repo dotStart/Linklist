@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE data SYSTEM "http://www.woltlab.com/DTDs/renommeeobjecttype.dtd">
+<data>
+	<import>
+		<type>
+			<name>linkListLinkComment</name>
+			<classfile>lib/data/linkList/link/comment/LinkListLinkCommentRenommeeObjectType.class.php</classfile>
+		</type>
+	</import>
+</data>

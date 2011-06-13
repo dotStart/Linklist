@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de-informal">
+	<!-- wcf.acp.option -->
+	<category name="wcf.acp.option">		
+		<item name="wcf.acp.option.user_renommee_object_linkList_link_comment_active"><![CDATA[Bewertung von Link-Kommentaren aktivieren]]></item>
+		<item name="wcf.acp.option.user_renommee_object_linkList_link_comment_active.description"><![CDATA[Soll es deinen Mitgliedern m&ouml;glich sein, Link-Kommentare global zu bewerten?]]></item>
+	</category>
+	<!-- /wcf.acp.option -->
+	
+	<!-- wcf.user.renommee -->
+	<category name="wcf.user.renommee">
+		<item name="wcf.user.renommee.modifier.linkListLinkComment"><![CDATA[Link-Kommentare]]></item>
+		<item name="wcf.user.renommee.modifier.linkListLinkComment.description"><![CDATA[F&uuml;r das Erstellen von Kommentaren zu einem Link erh&auml;ltst du einen Bonus auf Ihren Modifikator.]]></item>
+		<item name="wcf.user.renommee.linkListLinkComment.renommee"><![CDATA[Dieser Kommentar hat eine Renommee-Wertung von {$renommee}]]></item>
+		<item name="wcf.user.renommee.linkListLinkComment.state"><![CDATA[Wie bewertest du den Kommentar von &raquo;{$username}&laquo;?]]></item>
+		<item name="wcf.user.renommee.linkListLinkComment.state.negative"><![CDATA[Ich finde den Kommentar nicht gut]]></item>
+		<item name="wcf.user.renommee.linkListLinkComment.state.positive"><![CDATA[Ich finde den Kommentar gut]]></item>
+	</category>
+	<!-- /wcf.user.renommee -->
+</language>

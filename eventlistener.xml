@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/event-listener.xsd">
+	<import>
+		<eventlistener>
+			<eventClassName>URLParser</eventClassName>
+			<eventName>didParse</eventName>
+			<listenerClassFile>lib/system/event/listener/URLParserLinkListLinkURLListener.class.php</listenerClassFile>
+		</eventlistener>
+		<eventlistener>
+			<eventClassName>UserPage</eventClassName>
+			<eventName>assignVariables</eventName>
+			<listenerClassFile>lib/system/event/listener/UserPageLinkListLinksListener.class.php</listenerClassFile>
+		</eventlistener>
+		<eventlistener>
+			<eventClassName>AttachmentPage</eventClassName>
+			<eventName>show</eventName>
+			<listenerClassFile>lib/system/event/listener/AttachmentCheckLinkListLinkPermissionListener.class.php</listenerClassFile>
+		</eventlistener>
+	</import>
+</data>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/group-options.xsd">
+	<import>
+		<categories>
+			<!-- user -->
+			<category name="user.linkList">
+				<parent>user</parent>
+				<options>module_linkList</options>
+			</category>
+			<category name="user.linkList.links">
+				<parent>user.linkList</parent>
+			</category>
+			<category name="user.linkList.attachments">
+				<parent>user.linkList</parent>
+				<options>module_attachment</options>
+			</category>
+			<category name="user.linkList.comments">
+				<parent>user.linkList</parent>
+			</category>
+			<!-- /user -->
+			
+			<!-- mod -->
+			<category name="mod.linkList">
+				<parent>mod</parent>
+			</category>
+			<category name="mod.linkList.links">
+				<parent>mod.linkList</parent>
+			</category>
+			<category name="mod.linkList.comments">
+				<parent>mod.linkList</parent>
+			</category>
+			<!-- /mod -->
+			
+			<!-- admin -->
+			<category name="admin.linkList">
+				<parent>admin.content</parent>
+			</category>
+			<!-- /admin -->
+		</categories>
+		
+		<options>
+			<!-- user.linkList.links -->
+			<option name="user.linkList.canViewLinkList">
+				<categoryname>user.linkList.links</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="user.linkList.canViewCategory">
+				<categoryname>user.linkList.links</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="user.linkList.canEnterCategory">
+				<categoryname>user.linkList.links</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="user.linkList.canViewLink">
+				<categoryname>user.linkList.links</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="user.linkList.canAddLink">
+				<categoryname>user.linkList.links</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<enableOptions>user.linkList.canAddLinkWithoutModeration</enableOptions>
+			</option>
+			<option name="user.linkList.canAddLinkWithoutModeration">
+				<categoryname>user.linkList.links</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+			</option>
+			<option name="user.linkList.canEditOwnLink">
+				<categoryname>user.linkList.links</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+			</option>
+			<option name="user.linkList.canDeleteOwnLink">
+				<categoryname>user.linkList.links</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+			</option>
+			<option name="user.linkList.canVisitLink">
+				<categoryname>user.linklist.links</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<!-- /user.linkList.links -->
+
+			<!-- user.linkList.attachments -->
+			<option name="user.linkList.canDownloadAttachment">
+				<categoryname>user.linkList.attachments</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="user.linkList.canViewAttachmentPreview">
+				<categoryname>user.linkList.attachments</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="user.linkList.canUploadAttachment">
+				<categoryname>user.linkList.attachments</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<enableoptions>user.linkList.maxAttachmentSize,user.linkList.allowedAttachmentExtensions,user.linkList.maxAttachmentCount</enableoptions>
+			</option>
+			<option name="user.linkList.maxAttachmentSize">
+				<categoryname>user.linkList.attachments</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>300000</defaultvalue>
+			</option>
+			<option name="user.linkList.allowedAttachmentExtensions">
+				<categoryname>user.linkList.attachments</categoryname>
+				<optiontype>textarea</optiontype>
+				<defaultvalue><![CDATA[gif
+jpg
+jpeg
+png
+bmp
+zip
+txt
+pdf]]></defaultvalue>
+			</option>
+			<option name="user.linkList.maxAttachmentCount">
+				<categoryname>user.linkList.attachment</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>5</defaultvalue>
+			</option>
+			<!-- /user.linkList.attachment -->
+			
+			<!-- user.linkList.comments -->
+			<option name="user.linkList.canViewComment">
+				<categoryname>user.linkList.comments</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="user.linkList.canAddComment">
+				<categoryname>user.linkList.comments</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="user.linkList.canEditOwnComment">
+				<categoryname>user.linkList.comments</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+			</option>
+			<option name="user.linkList.canDeleteOwnComment">
+				<categoryname>user.linkList.comments</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+			</option>
+			<!-- /user.linkList.comments -->
+			
+			<!-- mod.linkList.links -->
+			<option name="mod.linkList.canEnableLink">
+				<categoryname>mod.linkList.links</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+			</option>
+			<option name="mod.linkList.canEditLink">
+				<categoryname>mod.linkList.links</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+			</option>
+			<option name="mod.linkList.canDeleteLink">
+				<categoryname>mod.linkList.links</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+			</option>
+			<option name="mod.linkList.canDeleteLinkCompletely">
+				<categoryname>mod.linkList.links</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+			</option>
+			<option name="mod.linkList.canPinLink">
+				<categoryname>mod.linkList.links</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+			</option>
+			<option name="mod.linkList.canCloseLink">
+				<categoryname>mod.linkList.links</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+			</option>
+			<option name="mod.linkList.canMoveLink">
+				<categoryname>mod.linkList.links</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+			</option>
+			<!-- /mod.linkList.links -->
+			
+			<!-- mod.linkList.comments -->
+			<option name="mod.linkList.canEditComment">
+				<categoryname>mod.linkList.comments</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+			</option>
+			<option name="mod.linkList.canDeleteComment">
+				<categoryname>mod.linkList.comments</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+			</option>
+			<!-- /mod.linkList.comments -->
+			
+			<!-- admin.linkList -->
+			<option name="admin.linkList.canAddCategory">
+				<categoryname>admin.linkList</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+			</option>
+			<option name="admin.linkList.canEditCategory">
+				<categoryname>admin.linkList</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+			</option>
+			<option name="admin.linkList.canDeleteCategory">
+				<categoryname>admin.linkList</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+			</option>
+			<!-- /admin.linkList -->
+		</options>
+	</import>
+</data>

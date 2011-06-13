@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<import>
+		<type>
+			<name>linkListLink</name>
+			<title>wcf.user.renommee.modifier.linkListLink</title>
+			<description>wcf.user.renommee.modifier.linkListLink.description</description>
+			<classfile>lib/data/user/renommee/modifier/LinkListLinkModifier.class.php</classfile>
+			<firstvalue>25</firstvalue>
+			<valuelimit>10</valuelimit>
+			<permissions>user.linkList.canAddLink</permissions>
+			<option>module_linkList</option>
+		</type>
+	</import>
+</data>

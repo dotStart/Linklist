@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/event-listener.xsd">
+	<import>
+		<eventlistener>
+			<eventClassName>LinkListLinkPage</eventClassName>
+			<eventName>readParameters</eventName>
+			<listenerClassFile>lib/system/event/listener/LinkListLinkCommentListListener.class.php</listenerClassFile>
+		</eventlistener>
+		<eventlistener>
+			<eventClassName>LinkListLinkPage</eventClassName>
+			<eventName>readData</eventName>
+			<listenerClassFile>lib/system/event/listener/LinkListLinkCommentListListener.class.php</listenerClassFile>
+		</eventlistener>
+		<eventlistener>
+			<eventClassName>LinkListLinkPage</eventClassName>
+			<eventName>assignVariables</eventName>
+			<listenerClassFile>lib/system/event/listener/LinkListLinkCommentListListener.class.php</listenerClassFile>
+		</eventlistener>
+		<eventlistener>
+			<eventClassName>LinkListLinkCommentListPage</eventClassName>
+			<eventName>readParameters</eventName>
+			<listenerClassFile>lib/system/event/listener/LinkListLinkCommentListListener.class.php</listenerClassFile>
+		</eventlistener>
+		
+		<eventlistener>
+			<eventClassName>LinkListLinkCommentAddForm</eventClassName>
+			<eventName>saved</eventName>
+			<listenerClassFile>lib/system/event/listener/LinkListLinkCommentListListener.class.php</listenerClassFile>
+		</eventlistener>
+		<eventlistener>
+			<eventClassName>LinkListLinkCommentEditForm</eventClassName>
+			<eventName>saved</eventName>
+			<listenerClassFile>lib/system/event/listener/LinkListLinkCommentListListener.class.php</listenerClassFile>
+		</eventlistener>
+	</import>
+</data>
