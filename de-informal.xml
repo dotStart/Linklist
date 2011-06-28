@@ -69,6 +69,8 @@
 		<item name="wcf.linkList.link.comment.add"><![CDATA[Kommentieren]]></item>
 		<item name="wcf.linkList.link.comment.add.value"><![CDATA[Link kommentieren]]></item>
 		<item name="wcf.linkList.link.by"><![CDATA[Von]]></item>
+		<item name="wcf.linkList.link.edit"><![CDATA[Link bearbeiten]]></item>
+		<item name="wcf.linkList.link.delete"><![CDATA[Link löschen]]></item>
 		<item name="wcf.linkList.link.commentList"><![CDATA[Kommentare auflisten]]></item>
 		<item name="wcf.linkList.link.comment.add"><![CDATA[Kommentar hinzufügen]]></item>
 		<item name="wcf.linkList.link.comment.add.message"><![CDATA[Nachricht]]></item>
