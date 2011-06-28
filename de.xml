@@ -76,6 +76,7 @@
 		<item name="wcf.linkList.link.comment.add"><![CDATA[Kommentar hinzufügen]]></item>
 		<item name="wcf.linkList.link.comment.add.message"><![CDATA[Nachricht]]></item>
 		<item name="wcf.linkList.link.comment.edit"><![CDATA[Kommentar bearbeiten]]></item>
+		<item name="wcf.linkList.link.comment.delete"><![CDATA[Kommentar löschen]]></item>
 		<item name="wcf.linkList.link.commentList.noComments"><![CDATA[Es wurden noch keine Kommentare hinzugefügt.]]></item>
 		<item name="wcf.linkList.link.commentList.show.ipAddress"><![CDATA[IP-Adresse anzeigen]]></item>
 		<item name="wcf.linkList.link.commentList.ipAddressBy"><![CDATA[IP-Adresse von &raquo;{$comment->username}&laquo;:]]></item>
