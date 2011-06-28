@@ -7,6 +7,7 @@
 		<item name="wcf.linkList.statistics"><![CDATA[Statistik]]></item>
 		<item name="wcf.linkList.statistics.details"><![CDATA[{if $statistics.categories == 1}1 Kategorie{else}{#$statistics.categories} Kategorien{/if} - {if $statistics.links == 1}1 Link{else} {#$statistics.links} Links{/if} ({#$statistics.linksPerDay} Links pro Tag) - {if $statistics.comments == 1}1 Kommentar{else}{#$statistics.comments} Kommentare{/if} ({#$statistics.commentsPerDay} Kommentare pro Tag) - {if $statistics.visits == 1}1 Besuch{else}{#$statistics.visits} Besuche{/if}]]></item>
 		<item name="wcf.linkList.link.search.query"><![CDATA[Links durchsuchen]]></item>
+		<item name="wcf.linkList.links"><![CDATA[Links]]></item>
 		<item name="wcf.linkList.moderation"><![CDATA[Moderation]]></item>
 		<item name="wcf.linkList.moderation.overview"><![CDATA[Übersicht]]></item>
 		<item name="wcf.linkList.moderation.deletedLinks"><![CDATA[Gelöschte Links]]></item>
