@@ -139,7 +139,7 @@
 							{if $items == 0}
 								<div class="border tabMenuContent">
 									<div class="container-2">
-										<p>{lang}wcf.linklist.link.commentList.noComments{/lang}</p>
+										<p>{lang}wcf.linkList.link.commentList.noComments{/lang}</p>
 									</div>
 								</div>
 							{/if}
