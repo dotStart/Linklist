@@ -320,7 +320,7 @@
 					
 					<div class="border tabMenuContent">
 						<div class="container-2">
-							<p>{lang}wcf.linklist.category.noLinks{/lang}</p>
+							<p>{lang}wcf.linkList.category.noLinks{/lang}</p>
 						</div>
 					</div>
 					
