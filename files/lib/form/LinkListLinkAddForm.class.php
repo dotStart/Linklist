@@ -113,7 +113,7 @@ class LinkListLinkAddForm extends MessageForm {
 			if ($this->preview) {
 				require_once(WCF_DIR.'lib/data/message/bbcode/AttachmentBBCode.class.php');
 				AttachmentBBCode::setAttachments($this->attachmentListEditor->getSortedAttachments());
-				WCF::getTPL()->assign('preview', LinkListLinkEditor::createPreview($this->text, $this->enableSmilies, $this->enableHtml, $this->enableBBCodes));
+				WCF::getTPL()->assign('preview', LinkListLinkEditor::createPreview($this->subject, $this->text, $this->enableSmilies, $this->enableHtml, $this->enableBBCodes));
 			}
 			// save message
 			if ($this->send) {
