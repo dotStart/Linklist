@@ -22,7 +22,7 @@
 		<item name="wcf.acp.option.linkList_link_thumbnail_type.description"><![CDATA[<p>W&auml;hle hier einen Dienst aus, von dem die Vorschaubilder bezogen werden sollen.</p>
 <ul>
 	<li><strong><a href="http://fadeout.de">fadeout.de</a></strong>: Bei diesem Dienst aktiviert sich automatisch ein Copyright auf der Startseite der Linkliste (schreibt der Anbieter vor).</li>
-	<li><strong><a href="http://www.websnapr.com/de/">websnapr.com</a></strong>: Bei diesem Dienst wird im Vorschaubild ein Copyright gezeigt</li>
+	<li><strong><a href="http://www.websnapr.com/de/">websnapr.com</a></strong>: Bei diesem Dienst wird im Vorschaubild ein Copyright gezeigt (Beachte das der websnapr-Dienst einen Key benötigt und teilweise invaliden HTML-Code in Deine Seite einbindet).</li>
 ]]></item>
 		<item name="wcf.acp.option.linkList_link_thumbnail_view"><![CDATA[Ansicht der Vorschaubilder]]></item>
 		<item name="wcf.acp.option.linkList_link_thumbnail_view.description"><![CDATA[<p>W&auml;hle hier aus, wie die Vorschaubilder dargestellt werden sollen.</p>
@@ -30,6 +30,8 @@
 <strong>Ansicht 2</strong>: Zeigt das Vorschauild in der Sidebar an]]></item>
 		<item name="wcf.acp.option.linkList_link_show_thumbnail_in_category"><![CDATA[Vorschaubild bei jedem Link bei Links-Auflistung anzeigen]]></item>
 		<item name="wcf.acp.option.linkList_link_show_thumbnail_in_category.description"><![CDATA[Soll bereits bei der Auflistung der Links in einer Kategorie ein Vorschaubild angezeigt werden?]]></item>
+		<item name="wcf.acp.option.linklist_link_thumbnail_websnapr_key"><![CDATA[Wepsnapr Key]]></item>
+		<item name="wcf.acp.option.linklist_link_thumbnail_websnapr_key.description"><![CDATA[Trage hier den Key ein den Du nach der Registrierung auf websnapr.com erhalten hast ein.]]></item>
 	</category>
 	<!-- /wcf.acp.option -->	
 </language>
