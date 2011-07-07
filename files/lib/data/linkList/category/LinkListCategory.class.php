@@ -131,7 +131,7 @@ class LinkListCategory extends DatabaseObject {
 	 * @return	boolean
 	 */
 	public function getPermission($permission = 'canViewCategory') {
-		return (boolean) $this->getCategoryPermission($permission, $this->categoryID);
+		return ($this->getCategoryPermission($permission, $this->categoryID) ? true : false);
 	}
 	
 	/**
