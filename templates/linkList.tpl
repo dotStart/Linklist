@@ -31,6 +31,7 @@
 	
 	{if $disabledLinks != 0 || $markedLinks != 0}
 		<div class="info smallFont">
+			{* TODO: WTF?! Hardcoded shit?!!?!?!? HOLY BUG! *}
 			{if $disabledLinks}<a href="index.php?page=LinkListModerationDisabledLinks{@SID_ARG_2ND}">{if $disabledLinks == 1}1 Link</a> ist{else}{#$disabledLinks} Links</a> sind{/if} deaktiviert.{/if} {if $markedLinks}<a href="index.php?page=LinkListModerationMarkedLinks{@SID_ARG_2ND}">{if $markedLinks == 1}1 Link</a> ist{else}{#$markedLinks} Links</a> sind{/if} markiert.{/if}
 		</div>
 	{/if}
