@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package name="de.evil-co.wcf.linkList.link.thumbnail" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/package.xsd">
 	<packageinformation>
-		<packagename>Link Sammlung: Vorschaubild eines Links</packagename>
-		<packagedescription>Dieses Plugin zeigt ein Vorschaubild eines Links an. Dabei kann zwischen mehreren Diensten ausgewählt werden.</packagedescription>
+		<packagename>Linklist: Thumbnails</packagename>
+		<packagename languagecode="de">Link Sammlung: Vorschaubild eines Links</packagename>
+		<packagename languagecode="de-informal">Link Sammlung: Vorschaubild eines Links</packagename>
+		<packagedescription>This plugin adds thumbnails to the linklist.</packagedescription>
+		<packagedescription languagecode="de">Dieses Plugin zeigt ein Vorschaubild eines Links an. Dabei kann zwischen mehreren Diensten ausgewählt werden.</packagedescription>
+		<packagedescription languagecode="de-informal">Dieses Plugin zeigt ein Vorschaubild eines Links an. Dabei kann zwischen mehreren Diensten ausgewählt werden.</packagedescription>
 		<version>1.1.0</version>
 		<date>2011-03-28</date>
 		<plugin>com.woltlab.wcf.data.message</plugin>
@@ -22,6 +26,7 @@
 	
 	<excludedpackages>
 		<excludedpackage>de.chrihis.wcf.linkList.link.thumbnail</excludedpackage>
+		<excludedpackage version="2.*">com.woltlab.wcf</excludedpackage>
 	</excludedpackages>
 	
 	<instructions type="install">
@@ -36,9 +41,6 @@
 		<!-- languages -->
 		<languages languagecode="de">de.xml</languages>
 		<languages languagecode="de-informal">de-informal.xml</languages>
-	</instructions>
-	
-	<instructions type="update" fromversion="1.0.0 Beta 1">
-		<files>files.tar</files>
+		<languages languagecode="en">en.xml</languages>
 	</instructions>
 </package>
