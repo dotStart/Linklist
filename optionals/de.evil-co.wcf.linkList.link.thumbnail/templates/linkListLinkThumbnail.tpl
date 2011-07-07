@@ -11,7 +11,7 @@
 				{if $service == 'fadeout'}
 					<a href="index.php?page=LinkListLinkVisit&amp;linkID={$linkID}" title="{lang}wcf.linkList.link.visit.value{/lang}"><img src="{$url}" alt="" /></a>
 				{elseif $service == 'websnapr'}
-					<script type="text/javascript">wsr_snapshot('{$url|jsencode}', '{LINKLIST_LINK_THUMBNAIL_WEBSNAPR_KEY}');</script>
+					<script type="text/javascript">wsr_snapshot('{$url|encodejs}', '{LINKLIST_LINK_THUMBNAIL_WEBSNAPR_KEY}');</script>
 				{/if}
 			</div>
 		</div>

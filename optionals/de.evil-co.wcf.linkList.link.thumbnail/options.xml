@@ -14,6 +14,8 @@
 				<defaultvalue>1</defaultvalue>
 				<enableoptions><![CDATA[linkList_link_thumbnail_type,linkList_link_thumbnail_view,linkList_link_show_thumbnail_in_category]]></enableoptions>
 			</option>
+			
+			<!-- FIXME: GOD DAMN! This is the best obfuscated code i ever seen ... One moment? This isn't obfuscated code. Ok?! -->
 			<option name="linkList_link_thumbnail_type">
 				<categoryname>linkList.link.thumbnail</categoryname>
 				<optiontype>select</optiontype>
@@ -32,6 +34,10 @@
 				<categoryname>linkList.link.thumbnail</categoryname>
 				<optiontype>boolean</optiontype>
 				<defaultvalue>0</defaultvalue>
+			</option>
+			<option name="linklist_link_thumbnail_websnapr_key">
+				<categoryname>linkList.link.thumbnail</categoryname>
+				<optiontype>text</optiontype>
 			</option>
 			<!-- /linkList.link.thumbnail -->
 		</options>

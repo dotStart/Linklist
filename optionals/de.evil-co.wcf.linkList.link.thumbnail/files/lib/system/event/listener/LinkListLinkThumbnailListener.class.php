@@ -33,25 +33,26 @@ class LinkListLinkThumbnailListener implements EventListener {
 						'service' => 'fadeout',
 						'linkID' => $eventObj->link->linkID
 					));
-					WCF::getTPL()->append('additionalBoxes', WCF::getTPL()->fetch('linkListLinkThumbnail'));
+					WCF::getTPL()->append('additionalLinkBoxes', WCF::getTPL()->fetch('linkListLinkThumbnail'));
 				}
 				WCF::getTPL()->append('additionalLinkFooterContent', '<p class="smallFont" style="text-align: center">'.WCF::getLanguage()->get('wcf.linkList.link.thumbnail.fadeout.coypright').'</p>');
 			}
 			else {
+				WCF::getTPL()->append('specialStyles', '<script type="text/javascript" src="http://www.websnapr.com/js/websnapr.js"></script>');
+
 				if (LINKLIST_LINK_THUMBNAIL_VIEW == 1) {
 					WCF::getTPL()->append(array(
-						'additionalMessageBodyContents' => '<img class="linkListLinkContentThumbnail" src="http://images.websnapr.com/?url='.$eventObj->link->url.'&size=s" alt="" title="'.WCF::getLanguage()->get('wcf.linkList.link.thumbnailShow').'" />',
+						'additionalMessageBodyContents' => '<div class="linkListLinkContentThumbnail"><script type="text/javascript">wsr_snapshot(\''.$this->encodejs($eventObj->link->url).'\', \''.LINKLIST_LINK_THUMBNAIL_WEBSNAPR_KEY.'\');</script></div>',
 						'specialStyles' => '<style type="text/css">.linkListLinkContentThumbnail { float: right; padding: 5px; } .linkListLinkContentThumbnail:after { clear: right; }</style>',
 					));
-				}
-				else {
+				} else {
 					WCF::getTPL()->assign(array(								
-						'url' => 'http://cligs.websnapr.com/?url='.$eventObj->link->url.'&size=s',
+						'url' => $eventObj->link->url,
 						'subject' => $eventObj->link->subject,
 						'service' => 'websnapr',
 						'linkID' => $eventObj->link->linkID
 					));
-					WCF::getTPL()->append('additionalBoxes', WCF::getTPL()->fetch('linkListLinkThumbnail'));
+					WCF::getTPL()->append('additionalLinkBoxes', WCF::getTPL()->fetch('linkListLinkThumbnail'));
 				}
 			}
 		}
@@ -62,10 +63,11 @@ class LinkListLinkThumbnailListener implements EventListener {
 					foreach ($eventObj->linkList->links as &$link) {
 						$additionalLeftContents[$link->linkID] = '<div class="linkListLinkListThumbnail"><a href="index.php?page=LinkListLink&amp;linkID='.$link->linkID.SID_ARG_2ND.'"><img src="http://fadeout.de/thumbshot-pro/?url='.$link->url.'&scale=4" alt="" /></a></div>';
 					}
-				}
-				else {
+				} else {
+					WCF::getTPL()->append('specialStyles', '<script type="text/javascript" src="http://www.websnapr.com/js/websnapr.js"></script>');
+					
 					foreach ($eventObj->linkList->links as &$link) {
-						$additionalLeftContents[$link->linkID] = '<div class="linkListLinkListThumbnail"><a href="index.php?page=LinkListLink&amp;linkID='.$link->linkID.SID_ARG_2ND.'"><img src="http://images.websnapr.com/?url='.$link->url.'&size=s" alt="" /></a></div>';
+						$additionalLeftContents[$link->linkID] = '<div class="linkListLinkListThumbnail"><script type="text/javascript">wsr_snapshot(\''.$this->encodejs($link->url).'\', \''.LINKLIST_LINK_THUMBNAIL_WEBSNAPR_KEY.'\');</script></div>';
 					}
 				}
 				
@@ -75,6 +77,24 @@ class LinkListLinkThumbnailListener implements EventListener {
 				));
 			}
 		}
+	}
+	
+	/**
+	 * Encodes strings for use in js variables
+	 * @param	string			$string
+	 */
+	protected function encodejs($string) {
+		// escape backslash
+		$string = StringUtil::replace("\\", "\\\\", $string);
+		
+		// escape singe quote
+		$string = StringUtil::replace("'", "\'", $string);
+		
+		// escape new lines
+		$string = StringUtil::replace("\n", '\n', $string);
+		
+		// escape slashes
+		return StringUtil::replace("/", '\/', $string);
 	}
 }
 ?>
