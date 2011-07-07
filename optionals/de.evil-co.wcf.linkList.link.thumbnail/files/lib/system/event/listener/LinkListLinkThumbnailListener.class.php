@@ -3,23 +3,23 @@
 require_once(WCF_DIR.'lib/system/event/EventListener.class.php');
 
 /**
- * Shows a thumbnail of a link.
- *
- * @author 	Christoph H.
- * @copyright	2010 Christoph H.
- * @license	GNU Lesser General Public License <http://www.gnu.org/licenses/lgpl.html>
- * @package	de.chrihis.wcf.linkList.link.thumbnail
- * @subpackage system.event.listener
- * @category 	WoltLab Community Framework (WCF)
+ * Adds thumbnails to the linklist
+ * @author		Johannes Donath
+ * @copyright		2011 Evil-Co.de
+ * @license		GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
+ * @package		de.evil-co.wcf.linkList.link.thumbnail
  */
 class LinkListLinkThumbnailListener implements EventListener {
 	/**
 	 * @see EventListener::execute()
 	 */
 	public function execute($eventObj, $className, $eventName) {
+		// thumbnails disabled?
 		if (!LINKLIST_LINK_SHOW_THUMBNAIL) return;
+		
 		if ($className == 'LinkListLinkPage') {
 			if (LINKLIST_LINK_THUMBNAIL_TYPE == 1) {
+				// fadeout
 				if (LINKLIST_LINK_THUMBNAIL_VIEW == 1) {
 					WCF::getTPL()->append(array(
 						'additionalMessageBodyContents' => '<img class="linkListLinkContentThumbnail" src="http://fadeout.de/thumbshot-pro/?url='.$eventObj->link->url.'&scale=4" alt="" title="'.WCF::getLanguage()->get('wcf.linkList.link.thumbnailShow').'" />',
@@ -38,6 +38,7 @@ class LinkListLinkThumbnailListener implements EventListener {
 				WCF::getTPL()->append('additionalLinkFooterContent', '<p class="smallFont" style="text-align: center">'.WCF::getLanguage()->get('wcf.linkList.link.thumbnail.fadeout.coypright').'</p>');
 			}
 			else {
+				// websnapr
 				WCF::getTPL()->append('specialStyles', '<script type="text/javascript" src="http://www.websnapr.com/js/websnapr.js"></script>');
 
 				if (LINKLIST_LINK_THUMBNAIL_VIEW == 1) {
