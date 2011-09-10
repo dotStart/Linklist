@@ -10,6 +10,9 @@ require_once(WCF_DIR.'lib/system/event/EventListener.class.php');
  * @package		de.evil-co.wcf.linkList.link.thumbnail
  */
 class LinkListLinkThumbnailListener implements EventListener {
+	public $additionalLeftContents = array();
+	public $eventObj = null;
+
 	/**
 	 * @see EventListener::execute()
 	 */
@@ -35,7 +38,6 @@ class LinkListLinkThumbnailListener implements EventListener {
 					));
 					WCF::getTPL()->append('additionalLinkBoxes', WCF::getTPL()->fetch('linkListLinkThumbnail'));
 				}
-				WCF::getTPL()->append('additionalLinkFooterContent', '<p class="smallFont" style="text-align: center">'.WCF::getLanguage()->get('wcf.linkList.link.thumbnail.fadeout.coypright').'</p>');
 			}
 			else {
 				// websnapr

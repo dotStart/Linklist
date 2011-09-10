@@ -8,7 +8,7 @@
 		<packagedescription languagecode="de">Dieses Plugin zeigt ein Vorschaubild eines Links an. Dabei kann zwischen mehreren Diensten ausgewählt werden.</packagedescription>
 		<packagedescription languagecode="de-informal">Dieses Plugin zeigt ein Vorschaubild eines Links an. Dabei kann zwischen mehreren Diensten ausgewählt werden.</packagedescription>
 		<version>1.1.0</version>
-		<date>2011-03-28</date>
+		<date>2011-07-07</date>
 		<plugin>com.woltlab.wcf.data.message</plugin>
 		<standalone>0</standalone>
 		<isunique>1</isunique>
